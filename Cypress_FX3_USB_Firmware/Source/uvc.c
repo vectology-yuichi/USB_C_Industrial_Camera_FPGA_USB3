@@ -80,7 +80,7 @@ uint8_t glProbeCtrl[CY_FX_UVC_MAX_PROBE_SETTING] = {
     0x00, 0x00,                 /* bmHint : no hit */
     0x01,                       /* Use 1st Video format index */
     0x01,                       /* Use 1st Video frame index */
-    DBVAL(INTERVAL_30),     /* Desired frame interval in the unit of 100ns: 30 fps */
+    DBVAL(INTERVAL_60),     /* Desired frame interval in the unit of 100ns: 30 fps */
     0x00, 0x00,                 /* Key frame rate in key frame/video frame units: only applicable
                                    to video streaming with adjustable compression parameters */
     0x00, 0x00,                 /* PFrame rate in PFrame / key frame units: only applicable to
