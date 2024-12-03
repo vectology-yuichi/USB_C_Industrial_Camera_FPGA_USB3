@@ -7,8 +7,6 @@ C_SRCS += \
 ../camera_ptzcontrol.c \
 ../cyfxtx.c \
 ../cyfxuvcdscr.c \
-../sensor_imx219.c \
-../sensor_imx290.c \
 ../sensor_imx477.c \
 ../uvc.c 
 
@@ -20,8 +18,6 @@ OBJS += \
 ./cyfx_gcc_startup.o \
 ./cyfxtx.o \
 ./cyfxuvcdscr.o \
-./sensor_imx219.o \
-./sensor_imx290.o \
 ./sensor_imx477.o \
 ./uvc.o 
 
@@ -29,8 +25,6 @@ C_DEPS += \
 ./camera_ptzcontrol.d \
 ./cyfxtx.d \
 ./cyfxuvcdscr.d \
-./sensor_imx219.d \
-./sensor_imx290.d \
 ./sensor_imx477.d \
 ./uvc.d 
 
