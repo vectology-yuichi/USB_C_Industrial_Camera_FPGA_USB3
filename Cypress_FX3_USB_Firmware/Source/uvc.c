@@ -558,14 +558,22 @@ CyFxGpifCB (
     switch (currentState)
     {
         case PARTIAL_BUF_IN_SCK0:
+        	CyU3PGpioSetValue(22, CyTrue);
+        	CyU3PGpioSetValue(22, CyFalse);
             CyU3PDmaSocketSetWrapUp (CY_U3P_PIB_SOCKET_0);
             break;
         case FULL_BUF_IN_SCK0:
+        	CyU3PGpioSetValue(22, CyTrue);
+        	CyU3PGpioSetValue(22, CyFalse);
             break;
         case PARTIAL_BUF_IN_SCK1:
+        	CyU3PGpioSetValue(22, CyTrue);
+        	CyU3PGpioSetValue(22, CyFalse);
             CyU3PDmaSocketSetWrapUp (CY_U3P_PIB_SOCKET_1);
             break;
         case FULL_BUF_IN_SCK1:
+        	CyU3PGpioSetValue(22, CyTrue);
+        	CyU3PGpioSetValue(22, CyFalse);
             break;
 
         default:
@@ -850,6 +858,8 @@ CyFxUVCApplnInit (void)
     }
 
     CyFxUvcAppGpifInit ();
+
+    CyU3PDebugPrint (4, "App init.");
 
     /* Register the GPIF State Machine callback used to get frame end notifications.
      * We use the fast callback version which is triggered from ISR context.
