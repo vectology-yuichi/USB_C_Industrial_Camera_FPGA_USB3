@@ -558,22 +558,22 @@ CyFxGpifCB (
     switch (currentState)
     {
         case PARTIAL_BUF_IN_SCK0:
-        	CyU3PGpioSetValue(22, CyTrue);
-        	CyU3PGpioSetValue(22, CyFalse);
+        	//CyU3PGpioSetValue(22, CyTrue);
+        	//CyU3PGpioSetValue(22, CyFalse);
             CyU3PDmaSocketSetWrapUp (CY_U3P_PIB_SOCKET_0);
             break;
         case FULL_BUF_IN_SCK0:
-        	CyU3PGpioSetValue(22, CyTrue);
-        	CyU3PGpioSetValue(22, CyFalse);
+        	//CyU3PGpioSetValue(22, CyTrue);
+        	//CyU3PGpioSetValue(22, CyFalse);
             break;
         case PARTIAL_BUF_IN_SCK1:
-        	CyU3PGpioSetValue(22, CyTrue);
-        	CyU3PGpioSetValue(22, CyFalse);
+        	//CyU3PGpioSetValue(22, CyTrue);
+        	//CyU3PGpioSetValue(22, CyFalse);
             CyU3PDmaSocketSetWrapUp (CY_U3P_PIB_SOCKET_1);
             break;
         case FULL_BUF_IN_SCK1:
-        	CyU3PGpioSetValue(22, CyTrue);
-        	CyU3PGpioSetValue(22, CyFalse);
+        	//CyU3PGpioSetValue(22, CyTrue);
+        	//CyU3PGpioSetValue(22, CyFalse);
             break;
 
         default:
@@ -873,8 +873,8 @@ CyFxUVCApplnInit (void)
 
     /* Image sensor initialization. Reset and then initialize with appropriate configuration. */
     CyU3PThreadSleep(100);
-    SensorReset ();
-    SensorInit ();
+    //SensorReset ();
+    //SensorInit ();
 
     /* USB initialization. */
     apiRetStatus = CyU3PUsbStart ();
